@@ -4,6 +4,25 @@ import { Link } from 'react-router-dom';
 import '../Styles/Sidebar.css'
 import { FiMenu } from "react-icons/fi";
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
+import { DiGoogleAnalytics } from "react-icons/di";
+import { FaFile } from "react-icons/fa";
+
+import { VscGraph } from "react-icons/vsc";
+import { BiSolidDoughnutChart } from "react-icons/bi";
+import { FaChartPie } from "react-icons/fa";
+import { BsDatabaseFill } from "react-icons/bs";
+import { FaUser } from "react-icons/fa";
+import { TbClock24 } from "react-icons/tb";
+import { PiFlagPennantDuotone } from "react-icons/pi";
+import { BiSolidComponent } from "react-icons/bi";
+import { TbFlagFilled } from "react-icons/tb";
+import { HiMiniCursorArrowRipple } from "react-icons/hi2";
+import { TbLayoutGridAdd } from "react-icons/tb";
+import { TiBatteryCharge } from "react-icons/ti";
+
+
+
+
 
 function Sidebar() {
     const [openDropdown, setOpenDropdown] = useState(false);
@@ -33,8 +52,8 @@ function Sidebar() {
                 <div className='Widgets'>
                     <h5>NAVIGATION</h5>
                     <ul>
-                        <Link className='links'>
-                            <li>Dashboard</li>
+                        <Link className='link'>
+                            <li><DiGoogleAnalytics className='icon-side'/>Dashboard</li>
                         </Link>
                     </ul>
 
@@ -67,8 +86,8 @@ function Sidebar() {
                         </div>
                     </div>
                      <ul>
-                            <Link className='links'>
-                                <li>Layout</li>
+                            <Link className='link'>
+                                <li><FaFile  className='icon-side'/>Layout</li>
                             </Link>
                         </ul>
                         {/* Dropdown Section */}
@@ -106,15 +125,15 @@ function Sidebar() {
         <h5>WIDGET</h5>
         <ul>
      <Link className='links'>     
-        <li>Statics</li>
+        <li><BiSolidDoughnutChart  className='icon-side'/>Statics</li>
         </Link>
 
         <Link  className='links'>     
-        <li>Data</li>
+        <li><VscGraph  className='icon-side'/>Data</li>
         </Link>
 
         <Link className='links'>     
-        <li>Chart</li>
+        <li><FaChartPie  className='icon-side'/>Chart</li>
         </Link>
 
         </ul>
@@ -125,19 +144,19 @@ function Sidebar() {
 
         <ul>
 <Link  className='links'>
-    <li>Online Membership</li>
+    <li><BsDatabaseFill  className='icon-side'/>Online Membership</li>
 </Link>
 
 <Link  className='links'>
-    <li>Membership</li>
+    <li><FaUser  className='icon-side'/>Membership</li>
 </Link>
 
 <Link  className='links'>
-    <li>Helpdesk</li>
+    <li><TbClock24  className='icon-side'/>Helpdesk</li>
 </Link>
 
 <Link  className='links'>
-    <li>Invoice</li>
+    <li><PiFlagPennantDuotone  className='icon-side'/>Invoice</li>
 </Link>
 
         </ul>
@@ -147,15 +166,15 @@ function Sidebar() {
 <h5>UI COMPONENTS</h5>
 <ul>
     <Link  className='links'>
-        <li>Components</li>
+        <li><BiSolidComponent  className='icon-side'/>Components</li>
     </Link>
 
     <Link  className='links'>
-        <li>Animation</li>
+        <li><TbFlagFilled  className='icon-side'/>Animation</li>
     </Link>
 
     <Link  className='links'>
-        <li>Icons</li>
+        <li><HiMiniCursorArrowRipple  className='icon-side'/>Icons</li>
     </Link>
 
 </ul>
@@ -165,11 +184,11 @@ function Sidebar() {
     <h5>FORMS</h5>
         <ul>
             <Link  className='links'>
-                <li>Form Elements</li>
+                <li><TbLayoutGridAdd  className='icon-side'/>Form Elements</li>
             </Link>
 
             <Link  className='links'>
-                <li>Form Plugins</li>
+                <li><TiBatteryCharge  className='icon-side'/>Form Plugins</li>
             </Link>
 
             <Link  className='links'>
