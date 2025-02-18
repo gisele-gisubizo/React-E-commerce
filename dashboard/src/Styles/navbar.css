@@ -1,0 +1,34 @@
+.tittle{
+    display: flex;
+    gap: 65em;
+    margin-left: 20px;
+  
+}
+.container-navbar{
+    background-color: black;
+    height: 50px;
+    color: white;
+}
+
+.different-tittle{
+    font-family: sans-serif;
+}
+
+.tittle-button button{
+    background: rgb(120, 171, 43);
+    width: 90px;
+    height: 30px;
+    border: none;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+.tittle p{
+   font-size: 17px;
+   margin-top: 15px;
+}
+
+.tittle-button{
+    font-size: 17px;
+   margin-top: 12px; 
+}
