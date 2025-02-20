@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoMenu } from "react-icons/io5";
 import '../Styles/view.css'
-import { AiOutlineTranslation } from "react-icons/ai";
+
 import { IoSettings } from "react-icons/io5";
 import { MdWbSunny } from "react-icons/md";
 import { LuMoonStar } from "react-icons/lu"
@@ -9,6 +9,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { AiTwotoneThunderbolt } from "react-icons/ai";
 import { IoNotifications } from "react-icons/io5";
+import { IoSearchOutline } from "react-icons/io5";
+import { PiTranslateFill } from "react-icons/pi";
 import admin from '../assets/admin.jpg';
 
 function View() {
@@ -49,18 +51,24 @@ function View() {
       <div className='view-container'>
       
       
-      <div className='view-content'>
+      <div className='view-top-left'>
       <IoMenu className='view-menu'/>
-      <input type="text" placeholder='ctrl + k' />
+      <div className='search-bar'>
+      <IoSearchOutline  className="search-icon"/>
+        <input type="text" placeholder='ctrl + k' />
+      
+      </div>
       </div>
 
       <div className='view-icons'>
      
-         {isDarkTheme ? <MdWbSunny onClick={toggleTheme}/> : <LuMoonStar onClick={toggleTheme}/>}
+         <div className='mode-icons'>{isDarkTheme ? <LuMoonStar onClick={toggleTheme} className='moon'/> : <MdWbSunny  onClick={toggleTheme} className='sun'/>}</div>
        
           <div className="dropdown">
            
-              <AiOutlineTranslation  onClick={toggleDropdown}/>
+              <div className='translation'>
+                <PiTranslateFill  onClick={toggleDropdown}/>
+              </div>
          
 
             {isOpen && (
