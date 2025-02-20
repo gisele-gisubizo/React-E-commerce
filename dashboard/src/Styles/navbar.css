@@ -25,6 +25,11 @@
 }
 
 
+.view-icons{
+    margin-left: 40em;
+}
+
+
 .tittle-button button:hover{
     background-color: rgb(116, 160, 50) ;
 }
