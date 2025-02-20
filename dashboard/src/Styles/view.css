@@ -1,0 +1,6 @@
+.view-container{
+    margin-left: 20em;
+    margin-top: 20em;
+    color: red;
+ z-index: 1000px;
+}

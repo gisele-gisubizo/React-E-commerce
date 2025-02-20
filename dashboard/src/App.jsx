@@ -14,7 +14,8 @@ function App() {
      <Routes>
 
      <Route path="/" element={<Layout/>}>
-     <Route path="/View" element={<View/>}/>
+     <Route path="/" index element={<View/>}/>
+  
 
 
 
